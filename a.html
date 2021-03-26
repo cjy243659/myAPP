@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    /* 1. */
+    // var a = 1;
+    // function fn(a){
+    //     alert(a)
+    //     a=2
+    // }
+    // fn()
+    // alert(a)
+
+    /* 2 */
+    // var n=13;
+    // function fn(n){
+    //     alert(n);//13
+    //     n=14; 
+    //     alert(n);//14
+    // }
+    // fn(n);
+    // alert(n)//13
+
+    /* 3 */
+    // var n = 0;
+    // function a() {
+    //     var n = 10;
+    //     function b() {
+    //         n++;
+    //         console.log(n);
+    //     }
+    //     b();//11
+    // }
+    // a();
+    // console.log(n);//0
+    /* ========================解析=========================== */
+    // var n;
+    // function a(){
+    //     var n;
+    //     function b(){
+    //         n++;
+    //         console.log(n)
+    //     }
+    //     n=10;
+    //     b();//11
+    // }
+    // n=0;
+    // a();
+    // console.log(n);//0
+
+
+    /* 4. */
+    // console.log(num, str);//undefined undefined
+    // var num = 18;
+    // var str = "lily";
+    // function fn2() {
+    //     console.log(str, num);//lily undefined
+    //     num = 19;
+    //     str = "candy";
+    //     var num = 14;
+    //     console.log(str, num);//candy 14
+    // }
+    // fn2();
+    // console.log(str, num);//candy 18
+    /* ========================解析=========================== */
+    //    var num;
+    //    var str;//此处的num和str都是全局变量
+    //    function fn2(){
+    //        var num;//这里的num是局部变量，没有赋值，取不到{}外面的值，内部也没有定义，就是undefined
+    //        console.log(str,num);//lily undefined 是因为这里输出的str是全局变量，可以取到
+    //        num=19;
+    //        str='candy';//在此处是给全局变量str赋了一个candy的值
+    //        num=14;//在此处修改num为14
+    //        console.log(str,num)//因为{}内部有str和num的值，所以直接赋值就可以了
+    //    }
+    //    num = 18;
+    //    str = "lily";
+    //    fn2()
+    //    console.log(str,num)
+
+
+    // var num;
+    // var str;
+    // function fn2() {
+    //     // var str;
+    //     var num;
+    //     console.log(str, num);
+    //     // num = 19;
+    //     // str = 'candy';
+    //     // num = 14;
+    //     // console.log(str, num)
+    // }
+    // num = 18;
+    // str = 'lily'
+    // fn2()
+
+
+    /* 5. */
+    // fn();
+    // function fn(){console.log(1)};
+    // fn();
+    // var fn = 13;
+    // fn();
+    // function fn(){console.log(2)};
+    // fn();
+    /* ========================解析=========================== */
+    // var fn;
+    // function fn(){console.log(1)};
+    // function fn(){console.log(2)};
+    // fn();
+    // fn();
+    // var fn = 13;//fn本身是个函数，不能等于一个number 报错、
+    // fn();
+    // fn();
+
+
+    /* 6 */
+    if (!("a" in window)) {
+        var a = 10;
+    }
+    console.log(a)//if条件下 a声明未定义，条件不成立  undefined
+    console.log(fn);//fn声明未定义， 条件不成立 undefined
+    if (9 == 8) {
+        function fn() {
+            alert(2);
+        }
+    }
+
+
+</script>
+
+</html>

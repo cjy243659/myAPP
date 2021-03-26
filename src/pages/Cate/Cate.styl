@@ -1,0 +1,41 @@
+@import("../../stylus/index.styl");
+.cate
+    display: flex
+    .list-ul
+        width: $list-img
+        line-height: $listBtn-height
+        text-align: center
+        li
+            width $margin-loginTop-$borderLeft
+            height $cateHeight
+            line-height:$cateHeight
+            font-size $h4
+        .active
+            border-left: $borderLeft solid  $coloractive
+            color:  $primary
+            background: $color-fff
+    .right
+        flex: 1
+        overflow hidden
+        .item
+            width $homeInfowidth
+            height $listBtn-width
+            border-radius: $margin
+            position relative
+            overflow hidden
+            margin: $margin
+            float left
+            img
+                width 100%
+                height 100%
+                margin: 0
+            p
+                width 100%
+                height $homeInfoHeight
+                color $color-fff
+                text-align: center
+                position absolute
+                left 0
+                bottom: 0
+                background: $coloractive
+                line-height: $homeInfoHeight

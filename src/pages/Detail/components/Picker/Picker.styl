@@ -1,0 +1,50 @@
+@import('../../../../stylus/index.styl')
+
+.picker
+    width 100vw
+    height 40%
+    background $color-fff
+    position fixed
+    left 0
+    bottom: 0
+    .picker-img
+        margin: $margin
+        display: flex
+        img 
+            width: $list-img
+        .goods-title
+            font-size: $h2
+            margin: $margin
+    .specs-title
+        font-size: $h2
+        font-weight: bold
+        margin: $margin
+    .picker-specs
+        width $specswidth
+        display flex
+        div
+            width $cateHeight
+            height $specsHeight
+            border $borderWidth solid $color-333
+            text-align: center
+            line-height: $specsHeight
+            border-radius: $margin1
+            margin 0 $margin1 0 $margin
+        .attractive
+            border $borderWidth solid $colorFFB217
+            color $colorFFB217
+    .pinker-btn
+        width $homeInfowidth
+        height $HeaderHeight
+        background $colorFFB217
+        color $color-fff
+        font-size: $h4
+        line-height: $HeaderHeight
+        text-align: center
+        position absolute
+        right 0
+        bottom 0
+        left 0
+        bottom 0
+        margin auto
+        margin-bottom: $margin

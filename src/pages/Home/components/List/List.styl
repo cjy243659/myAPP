@@ -1,0 +1,32 @@
+@import("../../../../stylus/index.styl");
+.list 
+    .list-item
+        width 100vw
+        height $list-img
+        display: flex
+        margin:$margin 0
+        background: $color-fff
+        .list-img
+            width: $list-img
+            margin: 0
+            margin-left: $margin
+            border-radius: $margin1
+        .listitem-right
+            padding:$margin1 $margin
+            flex: 1
+            // background: $primary
+            .list-name
+                font-size: $h2
+            .item-price, .item-price span
+                color: $colorRed
+                font-size: $h5
+                font-weight: bold
+                margin-top $margin 
+            .list-btn
+                width $listBtn-width
+                height $listBtn-height
+                background: $primary
+                text-align: center
+                line-height: $listBtn-height
+                border-radius: $margin1
+                color: $color-fff

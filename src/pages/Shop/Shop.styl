@@ -1,0 +1,98 @@
+@import("../../stylus/index.styl");
+.bigShop{
+    padding-bottom: $HeaderHeight
+}
+.shop
+    margin-top: $margin
+    .shop-header
+        width 100vw
+        height $shop-headerH
+        display: flex
+        img 
+            width $checkWidth
+            height $checkWidth
+            margin-top: $margin1
+            margin-left: $margin3
+        span 
+            line-height: $shop-headerH
+            margin-left: $margin3
+            font-size: $h5
+            color: $color-999
+    .main
+        width 100vw
+        height $shop-mainH
+        display: flex
+        position relative
+        .check_img
+            width $checkWidth
+            height $checkWidth
+            margin: $margin3
+            margin-top:$imgmiddle
+        .goods_img
+            width: $goodsImgW
+            height $goodsImgW
+            margin-top: $margin
+        .main-goods
+            margin-left: $margin
+            .title
+                font-size: $h2
+                margin-bottom:$margin4
+            .main-num
+                display: flex
+                span 
+                    display: block
+                    width $addsubW
+                    height $addsubH
+                    border $borderWidth solid $color-999
+                    text-align: center
+                    line-height: $addsubH
+                    font-size: $h5
+            .total-price,.total-price span 
+                font-size: $h4
+                margin-top: $margin1
+        .main-price
+            margin-left: $margin4
+            font-size: $h4
+            margin-top: $margin3
+    .main-del
+        width: $listBtn-height
+        background: $colorFFB217
+        color: $color-fff 
+        text-align: center
+        line-height: $shop-mainH
+        position absolute
+        right: $listBtn-height1
+        top: 0
+        display: none 
+    .shop-show-del
+        margin-left: $listBtn-height1
+    .shop-show-del2
+        display: block
+
+.footer
+    width: 100vw 
+    height: $HeaderHeight
+    position fixed 
+    background: $color-fff
+    left 0 
+    bottom: $HeaderHeight
+    border-top: $borderWidth2 solid $color-ccc
+    box-sizing: border-box
+    display: flex
+    .quanxuan ,.edit
+        margin: $margin1 $margin4
+        font-size: $color-333
+        img 
+            width: $checkWidth
+            height: $checkWidth
+    .edit
+        margin: $margin1 
+        margin-left: $margin4
+    .heji
+        margin-left: $margin1
+        .heji-price,.heji-price span
+            margin-top: $margin
+            color:$color-333
+        .text
+            color: $color-999
+

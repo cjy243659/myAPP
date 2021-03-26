@@ -1,0 +1,41 @@
+@import('./size.styl')
+@import('./color.styl')
+.login 
+    height $form-login
+    width $formWidth
+    margin: $margin-loginTop  auto;
+.login-name
+    width $formWidth
+    height $formHeight
+    border: none 
+    border-bottom: 1px solid $color-ccc
+    line-height: $formHeight
+    font-size: $h4
+    margin: $margin
+    .inp
+        font-size: $h4
+        border: none 
+        outline none 
+    span 
+        font-size: $h4
+        width: $form-user
+        text-align: center
+.login-btn
+    background: $primary;
+    color: $color-fff;
+    font-size: $h3;
+    text-align: center;
+    height: $buttonHeight;
+    width: 80%;
+    border-radius: $margin1
+    line-height: $buttonHeight
+    margin: $margin $margin-middle
+    font-size: $h2
+.login-forget
+    font-size: $h3
+    color:$color-333
+    text-align: right
+    margin: 0 $margin-middle
+    line-height: $buttonHeight
+.btn
+    margin: $margin-middle 

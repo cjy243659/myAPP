@@ -1,0 +1,51 @@
+@import("../../../../stylus/index.styl")
+
+img 
+    width 100%
+.detail    
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    background-color #fff
+.detail-left
+    width 80%
+    height auto
+    // float left
+    margin-left: $margin
+    line-height: $margin-middle
+    .detail-title
+        font-size: $h6
+        color: $color-333
+    .detail-middle
+        display: flex
+    .detail-price,.detail-price span
+        margin-top: $margin
+        color: $colorRed
+        font-size: $h4
+        font-weight: blod
+    .is
+        width $listBtn-height
+        height $form-user
+        border: $borderWidth solid $colorFFB217
+        color: $colorFFB217
+        text-align: center
+        line-height:  $form-user
+        margin: $margin $margin1 0 $margin
+    .del-price,.del-price span
+        margin-top: $margin
+        color: $color-homenavtxt
+        font-size: $h5
+        font-weight: blod
+.detai-right span 
+    display: block
+    width $listBtn-height
+    height  $form-user
+    margin-top: $margin
+    border-left: $borderWidth solid $color-999
+    float left
+    color $colorFF7074
+    line-height: $form-user
+    font-size:$h5
+.detail-bottom
+    padding-bottom: $HeaderHeight
+    
